@@ -16,7 +16,9 @@
 .. image:: https://img.shields.io/pypi/dm/pg_chameleon.svg
     :target: https://pypi.org/project/pg_chameleon
 
-    
+
+This is a fork of pg_chameleon v2.0.12 that replaces the dependency on psycopg2-binary with psycopg2 to avoid issues where psycopg2 is already installed. There are no other changes.
+
 pg_chameleon is a MySQL to PostgreSQL replica system written in Python 3. 
 The system use the library mysql-replication to pull the row images from MySQL which are stored into PostgreSQL as JSONB. 
 A pl/pgsql function decodes the jsonb values and replays the changes against the PostgreSQL database.
